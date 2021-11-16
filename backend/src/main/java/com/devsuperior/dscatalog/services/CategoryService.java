@@ -55,4 +55,9 @@ public class CategoryService {
 	public Page<CategoryDTO> findAllPaged(PageRequest pageRequest) {
 		return repository.findAll(pageRequest).map(x -> new CategoryDTO(x));
 	}
+	
+	@Transactional
+	public void deleteById(Long id) {
+		repository.deleteById(id);
+	}
 }
