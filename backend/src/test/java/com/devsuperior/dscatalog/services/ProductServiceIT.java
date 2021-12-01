@@ -42,7 +42,6 @@ public class ProductServiceIT {
 		Assertions.assertEquals(countTotalProducts - 1, repository.count());
 	}
 	
-	
 	@Test
 	public void deleteShouldThrowResourceNotFoundExceptionWhenNonExistingId() {
 		
