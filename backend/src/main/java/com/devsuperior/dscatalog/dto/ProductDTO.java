@@ -44,7 +44,6 @@ public class ProductDTO implements Serializable {
 		this.date = product.getDate();
 	}
 	
-	
 	public ProductDTO(Product product, Set<Category> categories) {
 		this(product);
 		
